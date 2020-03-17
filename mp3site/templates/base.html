@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>mp3 converter</title>
+</head>
+<body style="margin-left: 30px;">
+    <h1>mp3 converter</h1>
+    <form method='POST'>
+        {% csrf_token %}
+        <p><b>Ссылка на видео:</b><br>
+        <input type="url" name='url'></p>
+        <p><b>Ваша почта:</b><br>
+        <input type="email" name='email'></p>
+        <button type="submit">Go</button>
+    </form>
+</body>
+</html>
